@@ -1,5 +1,7 @@
 import { GeistSans } from 'geist/font/sans'
 
+import Providers from '@/lib/react-query/Providers'
+
 import './globals.css'
 
 const defaultUrl = process.env.VERCEL_URL
@@ -20,9 +22,11 @@ export default function RootLayout({
   return (
     <html lang="en" className={GeistSans.className}>
       <body className="bg-background text-foreground">
-        <main className="flex min-h-screen flex-col items-center">
-          {children}
-        </main>
+        <Providers>
+          <main className="flex min-h-screen flex-col items-center">
+            {children}
+          </main>
+        </Providers>
       </body>
     </html>
   )

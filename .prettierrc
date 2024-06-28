@@ -9,10 +9,12 @@
     "^react(.*)$",
     "^next(.*)$",
     "<THIRD_PARTY_MODULES>",
-    "^@/(.*)$",
+    "@/lib/(.*)$",
+    "@/components/(.*)$",
     "^@core/(.*)$",
     "^@server/(.*)$",
     "^@ui/(.*)$",
+    "^@/(.*)$",
     "^[./]"
   ],
   "importOrderSeparation": true,
